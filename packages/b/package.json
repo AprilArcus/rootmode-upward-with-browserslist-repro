@@ -1,0 +1,12 @@
+{
+  "name": "b",
+  "browserslist": "current node",
+  "scripts": {
+    "should-build": "babel --root-mode upward should-build.jsx",
+    "should-error": "babel --root-mode upward should-error.ts"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.18.10"
+  }
+}
+

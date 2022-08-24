@@ -1,0 +1,12 @@
+{
+  "name": "a",
+  "browserslist": "ie 11",
+  "scripts": {
+    "should-build": "babel --root-mode upward should-build.ts",
+    "should-error": "babel --root-mode upward should-error.jsx"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.18.10",
+    "@babel/preset-react": "7.18.6"
+  }
+}

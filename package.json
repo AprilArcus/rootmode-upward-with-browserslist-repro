@@ -1,0 +1,13 @@
+{
+  "name": "rootmode-upward-with-browserslist-repro",
+  "repository": "https://github.com/AprilArcus/rootmode-upward-with-browserslist-repro",
+  "version": "0.0.1",
+  "author": "April Arcus",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "if { npm run should-build --silent --workspace a | grep --quiet var; } && { ! npm run should-error --silent --workspace a 2>/dev/null; } && { npm run should-build --silent --workspace b | grep --quiet const; } && { ! npm run should-error --silent --workspace b 2>/dev/null; }; then echo pass; else echo fail; fi;"
+  }
+}
